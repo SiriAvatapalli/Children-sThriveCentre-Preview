@@ -1,0 +1,150 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Style for the image */
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Make sure the image covers the entire container */
+  opacity: 1; /* Initially visible */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth fade and transform transition */
+}
+
+/* Style for the dot */
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: calc(50% - 5px); /* Center vertically */
+  left: calc(50% - 5px); /* Center horizontally */
+  cursor: pointer;
+}
+.dotstairs {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: calc(50% - 5px); /* Center vertically */
+  left: calc(30% - 5px); /* Center horizontally */
+  cursor: pointer;
+}
+.dotrooms {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: calc(30% - 5px); /* Center vertically */
+  left: calc(90% - 5px); /* Center horizontally */
+  cursor: pointer;
+}
+.dotdining {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: calc(80%);
+  left: calc(20% - 5px);
+  cursor: pointer;
+}
+
+.dotclasses {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: calc(75% - 5px); /* Center vertically */
+  left: calc(70% - 5px); /* Center horizontally */
+  cursor: pointer;
+}
+
+.rightarrow {
+  width: 0%;
+  height: 0%;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid blue;
+  position: absolute;
+  top: calc(60% - 5px); /* Center vertically */
+  left: calc(90% - 5px); /* Center horizontally */
+  cursor: pointer;
+}
+.button {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(55, 0, 255);
+  position: absolute;
+  top: calc(90% - 15px);
+  left: calc(10%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.button::before {
+  content: "Back";
+  display: inline-block;
+  margin: auto;
+  text-align: center; /* Center the text horizontally */
+}
+
+div.button::before {
+  content: "Back";
+  display: inline-block;
+  color: white; /* Change the color of the text as needed */
+  text-align: center; /* Center the text horizontally */
+}
+.button1 {
+  width: 100px;
+  height: 20px;
+  background-color: rgb(55, 0, 255);
+  position: absolute;
+  top: calc(90%);
+  right: calc(10% - 5px);
+  cursor: pointer;
+}
+div.button1::before {
+  content: "Next";
+  display: inline-block;
+  color: white; /* Change the color of the text as needed */
+  line-height: 20px; /* Adjust line height to center text vertically */
+  text-align: center; /* Center the text horizontally */
+}
+
+/* Style for the dot */
+.classrooms {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: calc(50% - 5px); /* Center vertically */
+  left: calc(85% - 5px); /* Center horizontally */
+  cursor: pointer;
+}
